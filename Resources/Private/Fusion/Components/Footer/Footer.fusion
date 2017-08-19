@@ -1,0 +1,4 @@
+prototype(DL.OnePage:Components.Footer) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://DL.OnePage/Private/Fusion/Components/Footer/Footer.html'
+    copyrightYear = ${Date.year(Date.today())}
+}

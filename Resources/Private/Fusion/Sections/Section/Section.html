@@ -1,0 +1,13 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<section class="{sectionClass}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <neos:contentElement.editable property="title" tag="h2" class="section-heading"/>
+            </div>
+        </div>
+        {contentCollection -> f:format.raw()}
+    </div>
+</section>
+
+

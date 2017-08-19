@@ -1,0 +1,8 @@
+'DL.OnePage:Pages.Main':
+  abstract: false
+  superTypes:
+    'DL.OnePage:Pages.AbstractPage': true
+  childNodes:
+    stage:
+      position: 'before main'
+      type: 'DL.OnePage:Stage'

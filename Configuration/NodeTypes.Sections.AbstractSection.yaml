@@ -1,0 +1,12 @@
+'DL.OnePage:Sections.AbstractSection':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: AbstractSection
+    inlineEditable: true
+    group: onepageSections
+    inspector:
+      groups:
+        default:
+          label: Settings

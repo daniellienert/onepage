@@ -1,0 +1,45 @@
+'DL.OnePage:Sections.Section':
+  abstract: false
+  superTypes:
+    'DL.OnePage:Sections.AbstractSection': true
+    'Neos.Neos:ContentCollection': true
+    'Neos.NodeTypes:TitleMixin': true
+  ui:
+    label: Section
+    icon: icon-folder
+  properties:
+    sectionClass:
+      type: string
+      defaultValue: ''
+      ui:
+        reloadIfChanged: true
+        label: 'Background Color'
+        inspector:
+          group: default
+          position: 100
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              '':
+                label: White
+              'bg-light':
+                label: Light
+              'darkgray':
+                label: Dark Gray
+              'black':
+                label: Black
+
+    backgroundImage:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: Image
+        reloadIfChanged: TRUE
+        inspector:
+          group: default
+          position: 200
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 3
+                  height: 2

@@ -1,0 +1,4 @@
+prototype(DL.OnePage:Components.Navigation) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://DL.OnePage/Private/Fusion/Components/Navigation/Navigation.html'
+    sections = ${q(documentNode).find("[instanceOf DL.OnePage:Sections.Section]").get()}
+}

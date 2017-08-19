@@ -1,0 +1,46 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<footer>
+
+    <div class="footer-full-width hidden-sm-down">
+        <div class="row no-gutters">
+            <div class="col-md-2">
+                <f:render section="linkToTop"/>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <f:render section="footerLogo"/>
+                <f:render section="copyrightInfo"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mobile hidden-md-up">
+        <div class="row no-gutters">
+            <div class="col-sm-7 col-7">
+                <f:render section="copyrightInfo"/>
+            </div>
+            <div class="col-sm-5 col-5">
+                <f:render section="footerLogo"/>
+            </div>
+        </div>
+        <div>
+            <f:render section="linkToTop"/>
+        </div>
+    </div>
+</footer>
+
+
+<f:section name="linkToTop">
+        Nach oben
+</f:section>
+
+<f:section name="copyrightInfo">
+    <span class="copyright-info">&copy; {copyrightYear}. All rights reserved.</span>
+</f:section>
+
+<f:section name="footerLogo">
+    <span class="footer-logo"></span>
+</f:section>
+
+

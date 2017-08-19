@@ -1,0 +1,11 @@
+/**
+* Root TypoScript template
+*/
+root {
+	default {
+		type = ${q(node).property('_nodeType') + 'Page'}
+		renderPath >
+	}
+}
+
+include: **/*.fusion

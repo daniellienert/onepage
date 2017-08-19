@@ -1,0 +1,21 @@
+'DL.OnePage:Sections.Masthead':
+  abstract: false
+  superTypes:
+    'DL.OnePage:Sections.AbstractSection': true
+  ui:
+    label: Masthead
+    icon: icon-television
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: Image
+        reloadIfChanged: TRUE
+        inspector:
+          group: default
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 3
+                  height: 2

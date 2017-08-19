@@ -1,0 +1,4 @@
+'DL.OnePage:Pages.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.NodeTypes:Page': true

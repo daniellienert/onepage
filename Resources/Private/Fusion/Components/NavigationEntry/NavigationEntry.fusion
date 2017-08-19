@@ -1,0 +1,13 @@
+prototype(DL.OnePage:Components.NavigationEntry) < prototype(Neos.Fusion:Tag) {
+    tagName = 'li'
+    attributes {
+        class = 'nav-item'
+    }
+    content = Neos.Fusion:Tag {
+        tagName = 'a'
+        attributes {
+            class = 'nav-link'
+        }
+        content = ${node.properties.title}
+    }
+}

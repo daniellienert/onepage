@@ -1,0 +1,7 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        onepageSections:
+          position: 100
+          label: 'OnePager Sections'
