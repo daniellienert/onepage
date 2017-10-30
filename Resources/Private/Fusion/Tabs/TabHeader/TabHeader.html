@@ -1,0 +1,6 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+<li class="nav-item tab-header">
+    <a {linkAttributes -> f:format.raw()}>
+        <neos:contentElement.editable property="title" />
+    </a>
+</li>

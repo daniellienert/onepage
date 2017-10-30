@@ -29,6 +29,26 @@
               'black':
                 label: Black
 
+    fullWidth:
+      type: boolean
+      ui:
+        label: 'Full width section'
+        reloadIfChanged: true
+        inspector:
+          group: default
+          position: 210
+
+    showInSectionMenu:
+      type: boolean
+      defaultValue: true
+      ui:
+        label: 'Show in Section menu'
+        reloadIfChanged: true
+        inspector:
+          group: default
+          position: 220
+
+
     backgroundImage:
       type: Neos\Media\Domain\Model\ImageInterface
       ui:
@@ -43,3 +63,9 @@
                 locked:
                   width: 3
                   height: 2
+
+    title:
+      defaultValue: ~
+      ui:
+        aloha:
+          placeholder: 'Please insert a headline'

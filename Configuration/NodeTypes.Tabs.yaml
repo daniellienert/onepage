@@ -1,0 +1,12 @@
+'DL.OnePage:Tabs':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Tabs'
+    icon: 'icon-reorder'
+    inlineEditable: true
+    group: 'structure'
+  constraints:
+    nodeTypes:
+      'DL.OnePage:Tab': true
+      '*': false

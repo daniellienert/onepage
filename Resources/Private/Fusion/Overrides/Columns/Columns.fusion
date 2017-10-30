@@ -1,0 +1,20 @@
+##
+# Adjust "MultiColumn" element to Twitter bootstrap CSS classes
+#
+prototype(Neos.NodeTypes:MultiColumn) {
+    attributes.class = 'row'
+
+    columns.iterationName = 'multiColumnIteration'
+}
+
+prototype(Neos.NodeTypes:MultiColumnItem) {
+    largeColumnWidth = ${String.split(q(node).parent().property('layout'), '-')[multiColumnIteration.index]}
+    mediumColumnWidth = ${(this.largeColumnWidth * 2) > 12 ? 12 : (this.largeColumnWidth * 2)}
+
+    largeDefinition = ${'col-lg-' + this.largeColumnWidth}
+    mediumDefinition = ${' col-md-' + this.mediumColumnWidth}
+
+    @context.gridClasses = ${this.largeDefinition + this.mediumDefinition + ' col-sm-12'}
+
+    attributes.class = ${gridClasses}
+}

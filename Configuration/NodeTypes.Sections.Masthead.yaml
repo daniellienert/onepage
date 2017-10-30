@@ -2,20 +2,15 @@
   abstract: false
   superTypes:
     'DL.OnePage:Sections.AbstractSection': true
+    'Neos.Neos:ContentCollection': true
   ui:
     label: Masthead
     icon: icon-television
   properties:
-    image:
+    backgroundImage:
       type: Neos\Media\Domain\Model\ImageInterface
       ui:
-        label: Image
-        reloadIfChanged: TRUE
+        label: Background Image
+        reloadIfChanged: true
         inspector:
           group: default
-          editorOptions:
-            crop:
-              aspectRatio:
-                locked:
-                  width: 3
-                  height: 2

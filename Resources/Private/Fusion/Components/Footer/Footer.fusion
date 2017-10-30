@@ -1,4 +1,18 @@
 prototype(DL.OnePage:Components.Footer) < prototype(Neos.Fusion:Template) {
     templatePath = 'resource://DL.OnePage/Private/Fusion/Components/Footer/Footer.html'
     copyrightYear = ${Date.year(Date.today())}
+    subPages = ${q(documentNode).children('[instanceof Neos.Neos:Document]').get()}
+
+
+    contactPhone = ${q(site).property('contactPhone')}
+    contactMail = ${q(site).property('contactMail')}
+    contactAddress = ${q(site).property('contactAddress')}
+
+    socialFacebook = ${q(site).property('socialFacebook')}
+
+    attributes = Neos.Fusion:Attributes {
+        class = Neos.Fusion:RawArray {
+            sectionClass = 'darkgray'
+        }
+    }
 }

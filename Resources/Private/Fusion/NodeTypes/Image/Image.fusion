@@ -1,0 +1,3 @@
+prototype(Neos.NodeTypes:Image) {
+    maximumWidth = 1200
+}

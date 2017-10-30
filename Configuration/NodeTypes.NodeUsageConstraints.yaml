@@ -1,0 +1,38 @@
+'Neos.NodeTypes:Page':
+  childNodes:
+    main:
+      constraints: &nodeConstraints
+        nodeTypes:
+          'DL.OnePage:Tab': false
+
+'Neos.NodeTypes:TwoColumn':
+  childNodes:
+    column0:
+      constraints: *nodeConstraints
+    column1:
+      constraints: *nodeConstraints
+
+'Neos.NodeTypes:ThreeColumn':
+  childNodes:
+    column0:
+      constraints: *nodeConstraints
+    column1:
+      constraints: *nodeConstraints
+    column2:
+      constraints: *nodeConstraints
+
+'Neos.NodeTypes:FourColumn':
+  childNodes:
+    column0:
+      constraints: *nodeConstraints
+    column1:
+      constraints: *nodeConstraints
+    column2:
+      constraints: *nodeConstraints
+    column3:
+      constraints: *nodeConstraints
+
+'DL.OnePage:Sections.Section':
+  childNodes:
+    main:
+      constraints: *nodeConstraints

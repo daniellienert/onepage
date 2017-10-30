@@ -1,6 +1,3 @@
-
-/Resources/Public/Styles/*.css
-/Resources/Public/JavaScript/*
 node_modules/
 vendor/
 

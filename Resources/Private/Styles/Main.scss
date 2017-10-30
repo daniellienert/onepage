@@ -1,16 +1,25 @@
 // Core variables and mixins
+@import "bootstrap.scss";
+@import 'Fontawesome';
+
 @import "variables.scss";
 @import "mixins.scss";
 // Global CSS
 @import "global.scss";
+
+
+@import "Fonts.scss";
+
 // Components
 @import "navbar.scss";
-@import "masthead.scss";
 @import "services.scss";
 @import "portfolio.scss";
 @import "timeline.scss";
 @import "team.scss";
 @import "contact.scss";
-@import "footer.scss";
+
+// Fusion
+@import "../Fusion/**/*.scss";
+
 // Bootstrap Overrides
 @import "bootstrap-overrides.scss";

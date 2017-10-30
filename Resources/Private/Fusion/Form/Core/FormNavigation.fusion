@@ -1,0 +1,3 @@
+prototype(Neos.Form.FusionRenderer:FormNavigation) {
+    content.submitButton.label = 'Nachricht senden'
+}

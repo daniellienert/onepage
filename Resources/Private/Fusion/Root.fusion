@@ -2,10 +2,11 @@
 * Root TypoScript template
 */
 root {
-	default {
-		type = ${q(node).property('_nodeType') + 'Page'}
-		renderPath >
-	}
+    onepage {
+        type = 'DL.OnePage:Pages.OnePagePage'
+        @position = 'before default'
+        condition = ${q(node).is('[instanceof DL.OnePage:Pages.OnePage]') == true}
+    }
 }
 
 include: **/*.fusion

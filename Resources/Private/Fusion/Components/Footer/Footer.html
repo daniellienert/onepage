@@ -1,46 +1,35 @@
 {namespace neos=Neos\Neos\ViewHelpers}
-<footer>
-
-    <div class="footer-full-width hidden-sm-down">
-        <div class="row no-gutters">
-            <div class="col-md-2">
-                <f:render section="linkToTop"/>
-            </div>
-        </div>
-        <div class="row no-gutters">
+<footer {attributes -> f:format.raw()}>
+    <div class="container">
+        <div class="row">
             <div class="col-md-4">
-                <f:render section="footerLogo"/>
-                <f:render section="copyrightInfo"/>
+                <h2>Kontakt</h2>
+                <p>Telefon: {contactPhone} </br>
+                Mail: {contactMail}</p>
+                <p>{contactAddress -> f:format.raw()}</p>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <h2>Social</h2>
+                <div class="social-icons">
+                    <a href="{socialFacebook}">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-mobile hidden-md-up">
-        <div class="row no-gutters">
-            <div class="col-sm-7 col-7">
-                <f:render section="copyrightInfo"/>
+        <div class="row">
+            <div class="col-md-4">
             </div>
-            <div class="col-sm-5 col-5">
-                <f:render section="footerLogo"/>
+            <div class="col-md-4">
             </div>
-        </div>
-        <div>
-            <f:render section="linkToTop"/>
+            <div class="col-md-4">
+                <f:for each="{subPages}" as="subPage">
+                    <neos:link.node node="{subPage}">{subPage.properties.title}</neos:link.node>
+                </f:for>
+            </div>
         </div>
     </div>
 </footer>
-
-
-<f:section name="linkToTop">
-        Nach oben
-</f:section>
-
-<f:section name="copyrightInfo">
-    <span class="copyright-info">&copy; {copyrightYear}. All rights reserved.</span>
-</f:section>
-
-<f:section name="footerLogo">
-    <span class="footer-logo"></span>
-</f:section>
-
-

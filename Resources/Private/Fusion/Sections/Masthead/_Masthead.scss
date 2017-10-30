@@ -1,0 +1,58 @@
+$unit: 20px;
+
+// Styling for the masthead
+header.masthead {
+  width: 100%;
+  min-height: 300px;
+  background: no-repeat scroll 0px 100% / cover transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    align-self: center;
+
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+    figure {
+      text-align: center;
+
+      img {
+        margin-top: 20vh;
+        max-width: 70vw;
+      }
+    }
+  }
+}
+
+@media(min-width: 1170px) {
+  header.masthead {
+    min-height: 450px;
+    height: 100vh;
+    .container {
+      figure {
+        img {
+          margin-top: 30vh;
+          max-width: 10vw;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  header.masthead {
+    min-height: 50vh;
+
+    .container {
+      figure {
+        img {
+          max-width: 40vw;
+        }
+      }
+    }
+  }
+}

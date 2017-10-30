@@ -1,4 +1,9 @@
 prototype(DL.OnePage:Components.Navigation) < prototype(Neos.Fusion:Template) {
     templatePath = 'resource://DL.OnePage/Private/Fusion/Components/Navigation/Navigation.html'
-    sections = ${q(documentNode).find("[instanceOf DL.OnePage:Sections.Section]").get()}
+
+    entries = Neos.Fusion:Collection {
+        collection = ${q(documentNode).children('main').find("[instanceof DL.OnePage:Sections.Section][showInSectionMenu=true]").get()}
+        itemName = 'node'
+        itemRenderer = DL.OnePage:Components.NavigationEntry
+    }
 }

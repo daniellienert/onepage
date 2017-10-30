@@ -1,0 +1,17 @@
+prototype(DL.OnePage:Tabs) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://DL.OnePage/Private/Fusion/Tabs/Tabs.html'
+
+    tabHeaders = Neos.Fusion:Collection {
+        collection = ${q(node).children().get()}
+        itemName = 'node'
+        itemRenderer = DL.OnePage:Tabs.TabHeader
+        iterationName = 'tabHeadersIterator'
+    }
+
+    tabContents = Neos.Fusion:Collection {
+        collection = ${q(node).children().get()}
+        itemName = 'node'
+        itemRenderer = DL.OnePage:Tabs.TabContent
+        iterationName = 'tabContentsIterator'
+    }
+}

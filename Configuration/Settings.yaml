@@ -5,3 +5,25 @@ Neos:
         onepageSections:
           position: 100
           label: 'OnePager Sections'
+
+  Fusion:
+    defaultContext:
+      Transliterater: DL\OnePage\Eel\Helper\TransliteraterHelper
+
+DL:
+  Gallery:
+    themes:
+      bootstrapLightbox:
+        themeSettings:
+          columnClass: col-md-2
+      justified:
+        themeSettings:
+          imageVariants:
+            large:
+              maximumWidth: 1200
+              maximumHeight: 800
+
+    loadGalleryCSS: true
+    loadGalleryJS: false
+
+

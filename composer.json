@@ -3,10 +3,12 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes": "*"
+        "neos/nodetypes": "*",
+        "neos/form-builder": "*",
+        "behat/transliterator": "*",
+        "dl/gallery" : "*"
     },
     "suggest": {
-        "neos/seo": "*"
     },
     "name": "dl/onepage",
     "autoload": {

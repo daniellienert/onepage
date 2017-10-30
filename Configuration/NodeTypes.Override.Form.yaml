@@ -1,0 +1,20 @@
+'Neos.Form.Builder:SectionMixin':
+  properties:
+    elementClassAttribute:
+      type: string
+      ui:
+        label: Element Class
+        inspector:
+          group: 'formElement'
+
+'Neos.Form.Builder:NodeBasedForm':
+  properties:
+    'preset':
+      type: string
+      defaultValue: 'fusion'
+    elementClassAttribute:
+      type: string
+      ui:
+        label: Element Class
+        inspector:
+          group: 'form'

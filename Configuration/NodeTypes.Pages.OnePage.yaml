@@ -1,0 +1,77 @@
+'DL.OnePage:Pages.OnePage':
+  superTypes:
+    'Neos.NodeTypes:Page': true
+  ui:
+    label: 'Onepager'
+    icon: 'icon-bars'
+    inspector:
+      tabs:
+        configuration:
+          label: Project Configuration
+          position: 1000
+          icon: 'icon-cogs'
+      groups:
+        contact:
+          label: Contact
+          tab: 'configuration'
+          icon: 'icon-industry'
+          position: 1000
+        social:
+          label: Social Links
+          tab: 'configuration'
+          icon: 'icon-gratipay'
+          position: 1001
+  childNodes:
+    main:
+      constraints:
+        nodeTypes:
+          '*': false
+          'DL.OnePage:Sections.AbstractSection': true
+  properties:
+    contactPhone:
+      type: string
+      ui:
+        label: 'Phone Number'
+        inspector:
+          group: contact
+    contactMail:
+      type: string
+      ui:
+        label: 'Email'
+        inspector:
+          group: contact
+    contactAddress:
+      type: string
+      ui:
+        label: 'Address'
+        inspector:
+          group: contact
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+
+    socialFacebook:
+      type: string
+      ui:
+        label: 'Facebook'
+        inspector: &socialSettingConfiguration
+          group: social
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+    socialTwitter:
+      type: string
+      ui:
+        label: 'Twitter'
+        inspector: *socialSettingConfiguration
+    socialXing:
+      type: string
+      ui:
+        label: 'Xing'
+        inspector: *socialSettingConfiguration
+    socialLinkedIn:
+      type: string
+      ui:
+        label: 'LinkedIn'
+        inspector: *socialSettingConfiguration
+    socialKununu:
+      type: string
+      ui:
+        label: 'Kununu'
+        inspector: *socialSettingConfiguration

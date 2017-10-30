@@ -1,6 +1,9 @@
-prototype(DL.OnePage:Sections.Masthead) < prototype(Neos.Neos:Content) {
+prototype(DL.OnePage:Sections.Masthead) < prototype(DL.OnePage:Sections.Section) {
     templatePath = 'resource://DL.OnePage/Private/Fusion/Sections/Masthead/Masthead.html'
 
-    maximumWidth = 2000
-    maximumHeight = 1330
+    attributes {
+        class {
+            sectionClass = 'masthead'
+        }
+    }
 }

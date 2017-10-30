@@ -1,0 +1,14 @@
+prototype(DL.OnePage:Tabs.TabContent) < prototype(Neos.Fusion:Tag) {
+    node = ${node}
+    content = Neos.Neos:ContentCollection
+
+    attributes {
+        class = Neos.Fusion:RawArray {
+            tabDefinition = ' tab-pane fade'
+            active = ${node.properties.isActive ? 'in active show' : ''}
+        }
+
+        role = 'tabpanel'
+        id = ${'content-' + node.identifier}
+    }
+}

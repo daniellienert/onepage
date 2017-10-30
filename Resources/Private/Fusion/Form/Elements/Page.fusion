@@ -1,0 +1,5 @@
+prototype(Neos.Form:Page) {
+    tagName = 'div'
+    attributes.class = 'row'
+    attributes.class.@if.hasCustomClass = ${true}
+}

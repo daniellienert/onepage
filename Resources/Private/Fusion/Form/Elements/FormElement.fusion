@@ -1,0 +1,11 @@
+prototype(Neos.Form.FusionRenderer:FormElement) {
+    @process.wrap.attributes.class = 'form-group'
+}
+
+prototype(Neos.Form.FusionRenderer:FormElementLabel) {
+    attributes.class = 'control-label'
+}
+
+prototype(Neos.Form.FusionRenderer:FormElementField) {
+    attributes.class.bootstrap = ' form-control'
+}

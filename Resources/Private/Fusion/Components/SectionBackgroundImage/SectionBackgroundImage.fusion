@@ -1,0 +1,5 @@
+prototype(DL.OnePage.SectionBackroundImage) < prototype(Neos.Neos:ImageUri) {
+    asset = ${q(node).property('backgroundImage')}
+    maximumWidth = 2000
+    allowCropping = true
+}

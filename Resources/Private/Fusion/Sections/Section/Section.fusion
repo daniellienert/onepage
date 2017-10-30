@@ -1,4 +1,18 @@
 prototype(DL.OnePage:Sections.Section) < prototype(Neos.Neos:Content) {
     templatePath = 'resource://DL.OnePage/Private/Fusion/Sections/Section/Section.html'
     contentCollection = Neos.Neos:ContentCollectionRenderer
+
+    @context.backgroundImageUri = DL.OnePage.SectionBackroundImage
+
+    attributes {
+        class = Neos.Fusion:RawArray {
+            sectionClass = ${node.properties.sectionClass}
+        }
+        id = ${Transliterater.urlize(node.properties.title)}
+        style =  ${"background-image: url('" + backgroundImageUri + "');"}
+    }
+
+    containerAttributes = Neos.Fusion:Attributes {
+        class = ${node.properties.fullWidth == true ? 'container-full' : 'container'}
+    }
 }

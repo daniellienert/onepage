@@ -1,0 +1,18 @@
+prototype(DL.OnePage:Tabs.TabHeader) < prototype(Neos.Fusion:Template) {
+    templatePath = 'resource://DL.OnePage/Private/Fusion/Tabs/TabHeader/TabHeader.html'
+    node = ${node}
+
+    title = ${node.properties.title}
+
+    linkAttributes = Neos.Fusion:Attributes {
+
+        class = Neos.Fusion:Array {
+            navLink = 'nav-link'
+            active = ${node.properties.isActive ? ' active' : ''}
+        }
+
+        data-toggle = 'tab'
+        href = ${'#content-' + node.identifier}
+        role = 'tab'
+    }
+}
