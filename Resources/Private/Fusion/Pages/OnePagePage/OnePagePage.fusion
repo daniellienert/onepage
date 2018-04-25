@@ -25,7 +25,7 @@ prototype(DL.OnePage:Pages.OnePagePage) < prototype(Neos.Neos:Page) {
         navigation = DL.OnePage:Components.Navigation
 
         content {
-            main = PrimaryContent {
+            main = Neos.Neos:PrimaryContent {
                 nodePath = 'main'
             }
         }
