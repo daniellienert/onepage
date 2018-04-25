@@ -6,10 +6,9 @@
         "neos/nodetypes": "*",
         "neos/form-builder": "*",
         "behat/transliterator": "*",
-        "dl/gallery" : "*"
+        "dl/gallery": "*"
     },
-    "suggest": {
-    },
+    "suggest": [],
     "name": "dl/onepage",
     "autoload": {
         "psr-4": {
@@ -19,6 +18,9 @@
     "extra": {
         "neos": {
             "package-key": "DL.OnePage"
-        }
+        },
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
 }
