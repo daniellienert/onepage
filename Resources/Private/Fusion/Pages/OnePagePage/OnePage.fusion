@@ -19,15 +19,15 @@ prototype(DL.OnePage:Pages.OnePage) < prototype(Neos.Neos:Page) {
 
     bodyTag.attributes.id = "page-top"
 
-    body {
-        templatePath = 'resource://DL.OnePage/Private/Fusion/Pages/OnePagePage/OnePage.html'
+
+    body = Neos.Fusion:Array {
+
+        @ignoreProperties = ${['node','site']}
 
         navigation = DL.OnePage:Components.Navigation
 
-        content {
-            main = Neos.Neos:PrimaryContent {
-                nodePath = 'main'
-            }
+        mainContent = Neos.Neos:PrimaryContent {
+            nodePath = 'main'
         }
 
         footer = DL.OnePage:Components.Footer
