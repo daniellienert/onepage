@@ -1,12 +1,2 @@
-/**
-* Root TypoScript template
-*/
-root {
-    onepage {
-        type = 'DL.OnePage:Pages.OnePagePage'
-        @position = 'before default'
-        condition = ${q(node).is('[instanceof DL.OnePage:Pages.OnePage]') == true}
-    }
-}
 
 include: **/*.fusion

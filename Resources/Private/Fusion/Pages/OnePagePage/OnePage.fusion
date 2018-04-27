@@ -1,4 +1,4 @@
-prototype(DL.OnePage:Pages.OnePagePage) < prototype(Neos.Neos:Page) {
+prototype(DL.OnePage:Pages.OnePage) < prototype(Neos.Neos:Page) {
     lastVisitedNodeScript.@if.notLive = ${node.context.workspace.name != 'live'}
     head {
         headTags = '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">'
@@ -20,7 +20,7 @@ prototype(DL.OnePage:Pages.OnePagePage) < prototype(Neos.Neos:Page) {
     bodyTag.attributes.id = "page-top"
 
     body {
-        templatePath = 'resource://DL.OnePage/Private/Fusion/Pages/OnePagePage/OnePagePage.html'
+        templatePath = 'resource://DL.OnePage/Private/Fusion/Pages/OnePagePage/OnePage.html'
 
         navigation = DL.OnePage:Components.Navigation
 
