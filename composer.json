@@ -1,13 +1,16 @@
 {
-    "description": "",
+    "description": "A single page site package for Neos",
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
         "neos/nodetypes": "*",
         "neos/form-builder": "*",
+        "neos/form-fusionrenderer": "*",
         "behat/transliterator": "*",
+        "neos/swiftmailer": "*",
         "dl/gallery": "*"
     },
+    "license": "MIT",
     "suggest": [],
     "name": "dl/onepage",
     "autoload": {
