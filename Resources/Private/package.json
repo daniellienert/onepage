@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.3",
     "components-font-awesome": "*",
     "jquery": "^3.4.0",
     "jquery.easing": "^1.4.1",
-    "popper.js": "^1.11.1"
+    "popper.js": "^1.16"
   },
   "devDependencies": {
     "browser-sync": "2.18.13",
