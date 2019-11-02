@@ -1,3 +1,4 @@
+
 'DL.OnePage:Tab':
   superTypes:
     'Neos.Neos:Content': true
@@ -10,7 +11,6 @@
       groups:
         tabSettings:
           label: Settings
-
   properties:
     isActive:
       type: boolean
@@ -27,31 +27,26 @@
         inspector:
           group: tabSettings
         inlineEditable: true
-        aloha:
-          placeholder: 'Tab Titel'
-          'format':
-            'strong': false
-            'em': false
-            'u': false
-            'sub': false
-            'sup': false
-            'del': false
-            'p': false
-            'h1': false
-            'h2': false
-            'h3': true
-            'pre': false
-            'removeFormat': true
-          'table':
-            'table': false
-          'list':
-            'ol': false
-            'ul': false
-          'link':
-            'a': false
-          'alignment':
-            'left': false
-            'center': false
-            'right': false
-
-
+        inline:
+          editorOptions:
+            formatting:
+              strong: false
+              em: false
+              u: false
+              sub: false
+              sup: false
+              del: false
+              p: false
+              h1: false
+              h2: false
+              h3: true
+              pre: false
+              removeFormat: true
+              table: false
+              a: false
+              ol: false
+              ul: false
+              left: false
+              center: false
+              right: false
+            placeholder: 'Tab Titel'

@@ -1,3 +1,4 @@
+
 'DL.OnePage:Sections.Section':
   abstract: false
   superTypes:
@@ -17,18 +18,17 @@
         inspector:
           group: default
           position: 100
-          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
                 label: White
-              'bg-light':
+              bg-light:
                 label: Light
-              'darkgray':
-                label: Dark Gray
-              'black':
+              darkgray:
+                label: 'Dark Gray'
+              black:
                 label: Black
-
     fullWidth:
       type: boolean
       ui:
@@ -37,7 +37,6 @@
         inspector:
           group: default
           position: 210
-
     showInSectionMenu:
       type: boolean
       defaultValue: true
@@ -47,13 +46,11 @@
         inspector:
           group: default
           position: 220
-
-
     backgroundImage:
       type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: Image
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: default
           position: 200
@@ -63,9 +60,9 @@
                 locked:
                   width: 3
                   height: 2
-
     title:
-      defaultValue: ~
+      defaultValue: null
       ui:
-        aloha:
-          placeholder: 'Please insert a headline'
+        inline:
+          editorOptions:
+            placeholder: 'Please insert a headline'
