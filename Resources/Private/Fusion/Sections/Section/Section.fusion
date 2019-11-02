@@ -4,6 +4,8 @@ prototype(DL.OnePage:Sections.Section) < prototype(Neos.Neos:Content) {
 
     @context.backgroundImageUri = DL.OnePage.SectionBackroundImage
 
+    title = ${q(node).property('title')}
+
     attributes {
         class = Neos.Fusion:RawArray {
             sectionClass = ${node.properties.sectionClass}
