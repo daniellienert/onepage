@@ -5,14 +5,14 @@
         nodeTypes:
           'DL.OnePage:Tab': false
 
-'Neos.NodeTypes:TwoColumn':
+'Neos.NodeTypes.ColumnLayouts:TwoColumn':
   childNodes:
     column0:
       constraints: *nodeConstraints
     column1:
       constraints: *nodeConstraints
 
-'Neos.NodeTypes:ThreeColumn':
+'Neos.NodeTypes.ColumnLayouts:ThreeColumn':
   childNodes:
     column0:
       constraints: *nodeConstraints
@@ -21,7 +21,7 @@
     column2:
       constraints: *nodeConstraints
 
-'Neos.NodeTypes:FourColumn':
+'Neos.NodeTypes.ColumnLayouts:FourColumn':
   childNodes:
     column0:
       constraints: *nodeConstraints

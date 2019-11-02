@@ -1,4 +1,4 @@
-'Neos.NodeTypes:TwoColumn':
+'Neos.NodeTypes.ColumnLayouts:TwoColumn':
   properties:
     'layout':
       defaultValue: '6-6'
@@ -22,7 +22,7 @@
               '3-9':
                 label: '25% / 75%'
 
-'Neos.NodeTypes:ThreeColumn':
+'Neos.NodeTypes.ColumnLayouts:ThreeColumn':
   properties:
     layout:
       defaultValue: '6-3-3'
@@ -44,7 +44,7 @@
                 label: '25% / 25% / 50%'
 
 
-'Neos.NodeTypes:FourColumn':
+'Neos.NodeTypes.ColumnLayouts:FourColumn':
   properties:
     layout:
       defaultValue: '3-3-3-3'
