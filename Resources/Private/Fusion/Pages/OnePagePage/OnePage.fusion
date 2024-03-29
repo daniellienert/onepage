@@ -37,6 +37,8 @@ prototype(DL.OnePage:Pages.OnePage) < prototype(Neos.Neos:Page) {
                 attributes.src = Neos.Fusion:ResourceUri {
                     path = 'resource://DL.OnePage/Public/JavaScript/Main.min.js'
                 }
+
+                @position = 'end'
             }
         }
 
