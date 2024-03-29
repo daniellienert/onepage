@@ -21,7 +21,7 @@ prototype(DL.OnePage:Pages.OnePage) < prototype(Neos.Neos:Page) {
 
     body = Neos.Fusion:Array {
 
-        @ignoreProperties = ${['node','site', 'javascripts']}
+        @ignoreProperties = ${['node','site']}
 
         navigation = DL.OnePage:Components.Navigation
 
@@ -39,5 +39,8 @@ prototype(DL.OnePage:Pages.OnePage) < prototype(Neos.Neos:Page) {
                 }
             }
         }
+
+        @process.appendJavaScripts >
+
     }
 }
