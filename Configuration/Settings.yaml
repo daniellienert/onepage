@@ -6,6 +6,10 @@ Neos:
           position: 100
           label: 'OnePager Sections'
 
+    fusion:
+      autoInclude:
+        DL.OnePage: true
+
   Fusion:
     defaultContext:
       Transliterater: DL\OnePage\Eel\Helper\TransliteraterHelper
