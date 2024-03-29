@@ -19,10 +19,9 @@ prototype(DL.OnePage:Pages.OnePage) < prototype(Neos.Neos:Page) {
 
     bodyTag.attributes.id = "page-top"
 
-
     body = Neos.Fusion:Array {
 
-        @ignoreProperties = ${['node','site']}
+        @ignoreProperties = ${['node','site', 'javascripts']}
 
         navigation = DL.OnePage:Components.Navigation
 
