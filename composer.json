@@ -2,7 +2,7 @@
     "description": "A single page site package for Neos",
     "type": "neos-site",
     "require": {
-        "neos/neos": "^5.0",
+        "neos/neos": "^8.0",
         "neos/nodetypes": "*",
         "neos/form-builder": "*",
         "neos/form-fusionrenderer": "*",
